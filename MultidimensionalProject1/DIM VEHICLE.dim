@@ -6,6 +6,32 @@
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2454" scrolltop="-1695" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9472" y="11695" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_VEHICLE" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4524" height="7619" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000ac110000c31d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_VEHICLE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -21,15 +47,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>0</Value>
+      <Value>-2454</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>0</Value>
+      <Value>-1695</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>0</Value>
+      <Value>20</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -65,7 +91,227 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="04f083f7-707a-4eb4-8d75-3b71f60c4ad2">
+          <AttributeID>Type</AttributeID>
+          <Name>Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b8de08e0-3dfa-4b68-9618-7c5bf64e5872">
+          <AttributeID>Towing And Articulation</AttributeID>
+          <Name>Towing And Articulation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="942771b7-652a-4cac-be0c-f49e7227259d">
+          <AttributeID>Manoeuvre</AttributeID>
+          <Name>Manoeuvre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f1ea0e7c-8599-4041-b30c-de0771aeddf0">
+          <AttributeID>Junction Location</AttributeID>
+          <Name>Junction Location</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="59cef111-ccfb-4afb-a2c2-101193795246">
+          <AttributeID>Was Left Hand Drive</AttributeID>
+          <Name>Was Left Hand Drive</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8c3a5873-d35b-4549-96c5-560bd81e5d51">
+          <AttributeID>Journey Purpose Of Driver</AttributeID>
+          <Name>Journey Purpose Of Driver</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d3c0dad4-fb13-4a3a-b4ca-aae206e9ec2c">
+          <AttributeID>Sex Of Driver</AttributeID>
+          <Name>Sex Of Driver</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="212dd2b1-c53a-4237-87f3-9e12cd418b50">
+          <AttributeID>Age Of Driver</AttributeID>
+          <Name>Age Of Driver</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cf846bc4-425f-4156-8149-d065679cdc14">
+          <AttributeID>Age Band Of Driver</AttributeID>
+          <Name>Age Band Of Driver</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="82d0fc76-829e-4aa7-84e8-9ec2c3f857f1">
+          <AttributeID>Propulsion</AttributeID>
+          <Name>Propulsion</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="56f49739-1332-4fce-b12d-202f6f13e02d">
+          <AttributeID>Age</AttributeID>
+          <Name>Age</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="16ad9ce5-d34b-47c0-ad0f-76b127f7709f">
+      <ID>Type</ID>
+      <Name>Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="40e03e78-52f2-4f1e-ac7a-5841557fb087">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c449056a-88b7-4658-a001-9becc5fb46cf">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fcc84499-be3e-4666-a2cf-002491d8d342">
+      <ID>Towing And Articulation</ID>
+      <Name>Towing And Articulation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2e971777-71ef-4be3-a55c-03b6f75af628">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65b3ca82-da5d-4b27-a2d9-af69cbc02e08">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>towing_and_articulation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c4ab5fd3-1429-4b10-9520-d99f4373f1b5">
+      <ID>Manoeuvre</ID>
+      <Name>Manoeuvre</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed19529f-8dec-4a8b-87a8-6d37321c5963">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0e378a3-83da-450f-b7b2-27d34984464f">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>manoeuvre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4e312705-1db3-4685-9d67-7cd55378b313">
+      <ID>Junction Location</ID>
+      <Name>Junction Location</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f5fe3e5c-33ad-4d83-bc52-824c563c09ed">
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6c358db-ed8e-4a83-9dcd-ffc50aded861">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>junction_location</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ddfe58d-6003-4717-a03c-8dedb87f614d">
+      <ID>Was Left Hand Drive</ID>
+      <Name>Was Left Hand Drive</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="55074d48-eb9f-49c7-8dac-35e34ca66b8e">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb653366-217f-42c4-97f7-4de14cabedeb">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>was_left_hand_drive</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="967e6d9b-d121-4f4f-a6e9-0939e7e5dd12">
+      <ID>Journey Purpose Of Driver</ID>
+      <Name>Journey Purpose Of Driver</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ec2f56d2-a10d-48f1-98c5-204d35d99304">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1879664-4f1a-48b3-a3e6-f845ef11a43a">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>journey_purpose_of_driver</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="73dc42ff-8d7a-41ab-bffe-6ef72ca77c4d">
+      <ID>Sex Of Driver</ID>
+      <Name>Sex Of Driver</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e16a21d-773b-43a5-9f7c-435721df09b6">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c29a9d1-d6a6-481d-9e1d-312d0d2c71a3">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>sex_of_driver</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3c554b45-5a52-4610-8afb-c4776537a5f1">
+      <ID>Age Of Driver</ID>
+      <Name>Age Of Driver</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c4bbb4ab-9521-4cf3-a420-f7e1c8a42d50">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ef51ab0-c65f-42ef-be1f-10a924071d73">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>age_of_driver</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b9a8dd8a-f5f7-434f-8114-d87373105028">
+      <ID>Age Band Of Driver</ID>
+      <Name>Age Band Of Driver</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="181df087-d8c6-4178-89bb-3931c966bf30">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca35e4ce-3f9a-490d-8fd2-c3a80f205e11">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>age_band_of_driver</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4f30e8d1-63e5-4405-8604-26ca0e028354">
+      <ID>Propulsion</ID>
+      <Name>Propulsion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="916aa685-a582-428c-8843-6cf99c95ca85">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2ab31e8-774d-4c2a-b95e-834bdb9fd915">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>propulsion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d90e737-17b2-4253-a1fb-b302d343b47c">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c5b4f2f4-44dc-427e-82ae-bfd0b9935e38">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbf53c8e-8f69-4aa6-9945-c6cbbb501298">
+            <TableID>dbo_DIM_VEHICLE</TableID>
+            <ColumnID>age</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

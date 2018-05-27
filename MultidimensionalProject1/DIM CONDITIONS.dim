@@ -6,6 +6,32 @@
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2851" scrolltop="-3850" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9472" y="11695" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_CONDITIONS" left="-218" top="-106" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3731" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000930e00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_CONDITIONS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -21,19 +47,19 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>0</Value>
+      <Value>-2851</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>0</Value>
+      <Value>-3850</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>0</Value>
+      <Value>-218</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>0</Value>
+      <Value>-106</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -66,7 +92,128 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b0709beb-7a56-4955-b246-4326d759c114">
+          <AttributeID>Speed Limit</AttributeID>
+          <Name>Speed Limit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b22b1d2-680c-4f9f-bc4e-85d515e25b22">
+          <AttributeID>Junction Detail</AttributeID>
+          <Name>Junction Detail</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="81b6dc5d-0b0e-4c33-b9a7-7c52476fe565">
+          <AttributeID>Junction Control</AttributeID>
+          <Name>Junction Control</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fcc7b3e1-b46e-4ad6-9e9b-ecc103d5b585">
+          <AttributeID>Light Conditions</AttributeID>
+          <Name>Light Conditions</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fcc7c636-5762-454d-8358-eca49bd683b9">
+          <AttributeID>Weather Conditions</AttributeID>
+          <Name>Weather Conditions</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e4b766a8-dd51-4646-94f3-29f709efa837">
+          <AttributeID>Urban Or Rural Area</AttributeID>
+          <Name>Urban Or Rural Area</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="36f59b92-5f54-4268-8caa-1e8fc211eed6">
+      <ID>Speed Limit</ID>
+      <Name>Speed Limit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="548d1cd0-373a-4747-a563-6da69b204d75">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ffb775d-484e-4ebf-af93-bd824c2b9c7e">
+            <TableID>dbo_DIM_CONDITIONS</TableID>
+            <ColumnID>speed_limit</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d7dade87-fa9f-4505-8d0e-10b3a4be4bd0">
+      <ID>Junction Detail</ID>
+      <Name>Junction Detail</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c2d1584-cdf3-4afe-a578-a9039455c771">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92865092-7b89-4673-9d86-3d3051881864">
+            <TableID>dbo_DIM_CONDITIONS</TableID>
+            <ColumnID>junction_detail</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bf0d990b-fba9-48e0-9962-115a06b9aada">
+      <ID>Junction Control</ID>
+      <Name>Junction Control</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cc613162-dc6e-4d12-a023-b57d3ec96c6c">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e1bb7e3-141a-491b-8eaa-9de441a59678">
+            <TableID>dbo_DIM_CONDITIONS</TableID>
+            <ColumnID>junction_control</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="07549765-6abd-4399-8691-04981d33751b">
+      <ID>Light Conditions</ID>
+      <Name>Light Conditions</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e03b1723-ebc4-4b1e-9e85-39802b72e6d0">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e33b6a6d-8c86-4c1c-83d5-8d52a1aea69f">
+            <TableID>dbo_DIM_CONDITIONS</TableID>
+            <ColumnID>light_conditions</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1add9ce5-2266-4c83-9d84-146201c64d05">
+      <ID>Weather Conditions</ID>
+      <Name>Weather Conditions</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b069eb00-2d5c-4004-af33-93564df3d591">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af476018-de23-47c8-b595-208b776ce6fc">
+            <TableID>dbo_DIM_CONDITIONS</TableID>
+            <ColumnID>weather_conditions</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6537ea63-c643-4960-b396-c54672eacdd0">
+      <ID>Urban Or Rural Area</ID>
+      <Name>Urban Or Rural Area</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="29b0cf7e-bddc-4f94-8460-7542081abab9">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="562e491c-80cc-4712-8e4d-a45b0c545f0b">
+            <TableID>dbo_DIM_CONDITIONS</TableID>
+            <ColumnID>urban_or_rural_area</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
