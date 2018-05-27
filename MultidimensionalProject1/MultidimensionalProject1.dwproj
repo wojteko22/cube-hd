@@ -6,10 +6,31 @@
     <Name>MultidimensionalProject1.database</Name>
     <FullPath>MultidimensionalProject1.database</FullPath>
   </Database>
+  <DataSources>
+    <ProjectItem>
+      <Name>Accidents.ds</Name>
+      <FullPath>Accidents.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Accidents</Id>
+            <Name>Accidents</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-G3DNSSJ\S1;Integrated Security=SSPI;Initial Catalog=Accidents</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Accidents</Id>
+            <Name>Accidents</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
