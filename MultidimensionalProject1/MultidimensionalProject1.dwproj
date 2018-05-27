@@ -6,12 +6,56 @@
     <Name>MultidimensionalProject1.database</Name>
     <FullPath>MultidimensionalProject1.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Accidents.cube</Name>
+      <FullPath>Accidents.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Accidents.partitions</Name>
+          <FullPath>Accidents.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>DIM LOCATION.dim</Name>
+      <FullPath>DIM LOCATION.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM CONDITIONS.dim</Name>
+      <FullPath>DIM CONDITIONS.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM DATE.dim</Name>
+      <FullPath>DIM DATE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM TIME.dim</Name>
+      <FullPath>DIM TIME.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM CASUALTY.dim</Name>
+      <FullPath>DIM CASUALTY.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DIM VEHICLE.dim</Name>
+      <FullPath>DIM VEHICLE.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>Accidents.ds</Name>
       <FullPath>Accidents.ds</FullPath>
     </ProjectItem>
   </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Accidents.dsv</Name>
+      <FullPath>Accidents.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
