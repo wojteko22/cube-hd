@@ -61,5 +61,25 @@
         </Partition>
       </Partitions>
     </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT ACCIDENTS 3</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="061a4179-4deb-4dc7-a46c-98dfee02c34d">
+          <ID>FACT ACCIDENTS</ID>
+          <Name>FACT ACCIDENTS</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9749748c-397b-4e50-ab84-b1043710b3bc">
+            <DataSourceViewID>Accidents</DataSourceViewID>
+            <TableID>dbo_FACT_ACCIDENTS</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
   </MeasureGroups>
 </Cube>
